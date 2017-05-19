@@ -1,0 +1,86 @@
+:root {
+  --gradient: linear-gradient(125deg, #062849, #1d5f5c);
+  --divider: rgba(255,255,255,0.1);
+  --solidBackground: #123248;
+}
+
+.tree-view,
+atom-dock .tab-bar .tab.active {
+  background: var(--solidBackground);
+  border-bottom: 1px solid var(--divider);
+}
+
+.tree-view .name {
+  font-size: 1.1em;
+  line-height: 1.35;
+}
+
+atom-text-editor::shadow .gutter {
+  background: transparent;
+}
+
+.tree-view .selected:before {
+  background: rgba(0,0,0,0.3);
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+.editor .selection .region {
+  background-color: rgba(255,255,255,0.05);
+}
+
+// style the background and foreground colors on the atom-text-editor-element itself
+atom-text-editor {
+  background: var(--gradient);
+}
+
+[theme-one-dark-ui-layoutmode="auto"] atom-pane-container atom-pane {
+  border: none !important;
+}
+
+atom-text-editor .gutter .line-number.cursor-line {
+  font-weight: bold;
+  background-color: rgba(255,255,255,0.05);
+}
+
+// Tab Bar
+.tab-bar {
+  background: var(--gradient);
+  border: 0;
+  box-shadow: none;
+}
+
+.tab-bar .tab {
+  background-color: rgba(255,255,255,0.05);
+  border: 0;
+  border-left: 1px solid var(--divider);
+  border-bottom: 1px solid var(--divider);
+}
+
+.tab-bar .tab.active[data-type$="Editor"],
+.tab-bar .tab.active[data-type$="AboutView"],
+.tab-bar .tab.active[data-type$="TimecopView"],
+.tab-bar .tab.active[data-type$="StyleguideView"],
+.tab-bar .tab.active[data-type="MarkdownPreviewView"] {
+  background-color: var(--divider);
+  border: 0;
+  border-left: 1px solid var(--divider);
+  border-bottom: 1px solid var(--divider);
+  box-shadow: none;
+}
+
+.tab-bar .tab:last-of-type {
+  box-shadow: none;
+}
+
+
+// status bar
+.status-bar {
+  background: var(--solidBackground);
+  border: 0;
+  box-shadow: none;
+}
+
+.atom-dock-inner.bottom {
+  background: var(--solidBackground);
+}
