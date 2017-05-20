@@ -15,7 +15,7 @@ atom-dock .tab-bar .tab.active {
   line-height: 1.35;
 }
 
-atom-text-editor::shadow .gutter {
+atom-text-editor.editor .gutter {
   background: transparent;
 }
 
@@ -26,7 +26,7 @@ atom-text-editor::shadow .gutter {
 }
 
 .editor .selection .region {
-  background-color: rgba(255,255,255,0.05);
+  background-color: rgba(255,255,255,0.1);
 }
 
 // style the background and foreground colors on the atom-text-editor-element itself
@@ -83,4 +83,11 @@ atom-text-editor .gutter .line-number.cursor-line {
 
 .atom-dock-inner.bottom {
   background: var(--solidBackground);
+}
+
+.name.icon.icon-file-text::before,
+.name.icon.icon-book::before,
+.name.icon.icon-file-media::before,
+.name.icon.icon-file-zip::before {
+  top: -5px;
 }
