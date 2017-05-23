@@ -7,7 +7,7 @@
 .tree-view,
 atom-dock .tab-bar .tab.active {
   background: var(--solidBackground);
-  border-bottom: 1px solid var(--divider);
+  border: 1px solid var(--solidBackground);
 }
 
 .tree-view .name {
@@ -83,6 +83,10 @@ atom-text-editor .gutter .line-number.cursor-line {
 
 .atom-dock-inner.bottom {
   background: var(--solidBackground);
+}
+
+.atom-dock-inner.atom-dock-open.left {
+  border-right: 0;
 }
 
 .name.icon.icon-file-text::before,
