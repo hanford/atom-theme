@@ -1,0 +1,25 @@
+"*":
+  core:
+    openEmptyEditorOnStart: false
+    telemetryConsent: "no"
+    themes: [
+      "one-dark-ui"
+      "one-dark-vivid-syntax"
+    ]
+    titleBar: "custom"
+  editor:
+    fontSize: 13
+    invisibles: {}
+    showIndentGuide: true
+    showInvisibles: true
+  "exception-reporting":
+    userId: "d4255a64-6955-9964-5df2-b42f600a31de"
+  linter:
+    showErrorPanel: false
+  minimap:
+    scrollAnimation: true
+  react:
+    enabledForAllJavascriptFiles: true
+  "tree-view": {}
+  welcome:
+    showOnStartup: false

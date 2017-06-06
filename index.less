@@ -95,3 +95,24 @@ atom-text-editor .gutter .line-number.cursor-line {
 .name.icon.icon-file-zip::before {
   top: -5px;
 }
+
+
+// Shift the tabs up
+:not(.fullscreen) > atom-workspace {
+  // Hide title
+  .title-bar .title {
+    display: none;
+  }
+
+  // Remove background from titlebar and toolbars
+  .title-bar,
+  .tool-bar,
+  .tool-bar button.tool-bar-btn {
+    background: var(--gradient);
+    border: 0;
+  }
+
+  atom-panel {
+    border: 0;
+  }
+}
