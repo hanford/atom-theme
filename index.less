@@ -53,8 +53,6 @@ atom-text-editor .gutter .line-number.cursor-line {
 .tab-bar .tab {
   background-color: rgba(255,255,255,0.05);
   border: 0;
-  border-left: 1px solid var(--divider);
-  border-bottom: 1px solid var(--divider);
 }
 
 .tab-bar .tab.active[data-type$="Editor"],
@@ -64,8 +62,6 @@ atom-text-editor .gutter .line-number.cursor-line {
 .tab-bar .tab.active[data-type="MarkdownPreviewView"] {
   background-color: var(--divider);
   border: 0;
-  border-left: 1px solid var(--divider);
-  border-bottom: 1px solid var(--divider);
   box-shadow: none;
 }
 
@@ -108,11 +104,36 @@ atom-text-editor .gutter .line-number.cursor-line {
   .title-bar,
   .tool-bar,
   .tool-bar button.tool-bar-btn {
-    background: var(--gradient);
+    background: linear-gradient(125deg, #062849, #1d5f5c);
     border: 0;
   }
 
   atom-panel {
     border: 0;
   }
+}
+
+atom-pane-container atom-pane {
+  border-bottom: 0;
+}
+
+atom-panel.modal:before {
+  background: var(--gradient);
+}
+
+.list-group {
+  background: var(--gradient);
+  border: 0;
+}
+
+.list-group {
+  background: var(--gradient);
+}
+
+.select-list ol.list-group li.selected, .select-list ol.list-group li.selected {
+  background: var(--divider);
+}
+
+li.two-lines {
+  border-bottom: 0;
 }
