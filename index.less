@@ -69,10 +69,9 @@ atom-text-editor .gutter .line-number.cursor-line {
   box-shadow: none;
 }
 
-
 // status bar
 .status-bar {
-  background: var(--solidBackground);
+  background: var(--gradient);
   border: 0;
   box-shadow: none;
 }
@@ -104,7 +103,7 @@ atom-text-editor .gutter .line-number.cursor-line {
   .title-bar,
   .tool-bar,
   .tool-bar button.tool-bar-btn {
-    background: linear-gradient(125deg, #062849, #1d5f5c);
+    background: var(--gradient);
     border: 0;
   }
 
@@ -117,7 +116,8 @@ atom-pane-container atom-pane {
   border-bottom: 0;
 }
 
-atom-panel.modal:before {
+atom-panel.modal:before,
+atom-panel.modal{
   background: var(--gradient);
 }
 
@@ -136,4 +136,16 @@ atom-panel.modal:before {
 
 li.two-lines {
   border-bottom: 0;
+}
+
+atom-pane.active .tab.active:before {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+atom-panel.modal .select-list ol.list-group {
+  border: 0px;
+}
+
+atom-panel.modal .select-list ol.list-group li {
+  border: 0px;
 }
