@@ -1,13 +1,14 @@
 :root {
   --gradient: linear-gradient(125deg, #062849, #1d5f5c);
+  --mutedGradient: linear-gradient(90deg, #07294a, #0c354e);
   --divider: rgba(255,255,255,0.1);
   --solidBackground: #123248;
 }
 
 .tree-view,
 atom-dock .tab-bar .tab.active {
-  background: var(--solidBackground);
-  border: 1px solid var(--solidBackground);
+  background: var(--mutedGradient);
+  border-right: 1px solid var(--divider);
 }
 
 .tree-view .name {
@@ -77,7 +78,7 @@ atom-text-editor .gutter .line-number.cursor-line {
 }
 
 .atom-dock-inner.bottom {
-  background: var(--solidBackground);
+  background: var(--divider);
 }
 
 .atom-dock-inner.atom-dock-open.left {
